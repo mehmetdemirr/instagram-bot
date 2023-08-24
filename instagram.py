@@ -51,17 +51,16 @@ class Instagram :
                 break
             tikla.send_keys(Keys.SPACE)
             print(f"yüklenen takipçi :{len(takiciler)}")
+        #burada takipçi listesi geliyor istediğin gibi kullanabilirsin
         print(f"takipçi sayısı:{len(takipci_listesi)}")
         
 
     
         
 #kendi hesabınız ise user_info.py dosyasındaki 
-#username ve password alanlarını doldurabilirsiniz 
-# ve yorumları kaldırıp çalıştırabilirsiniz
+#eposta , username ve password alanlarını doldurabilirsiniz 
 instagram=Instagram(eposta,username,password)
 instagram.sign()
 instagram.get_follower()
 
-time.sleep(15)
 driver.quit()
